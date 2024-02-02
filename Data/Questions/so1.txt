@@ -813,3 +813,41 @@ v nessuna delle altre opzioni è corretta
 v gli hard link sono puntatori diretti al descrittore di un file (inode). Un contatore viene utilizzato per tenere traccia di quanti hard link puntino ad un determinato inode. Questo fa si che il file non possa essere cancellato fintantoché ci sono hard link che continuano a puntarlo
 > possono esistere hard link a file non più esistenti, ad esempio se il file a cui l'hard link puntava viene cancellato
 > nessuna delle altre risposte è corretta
+
+142)Tipicamente, nei processori moderni la memoria cache
+> è strutturata a livelli gerarchici ed il processore può caricare i dati e le istruzioni nei registri ad uno qualsiasi dei livelli della cache
+> è strutturata a livelli gerarchici ed il processore può caricare i dati e le istruzioni nei registri solo se si trovano nel primo o secondo livello della cache
+> non ha struttura gerarchica, in quanto una struttura piatta consente una maggior efficienza e velocità nel trasferimento dati
+v è strutturata a livelli gerarchici, ed il processore può caricare i dati sono dalla cache di livello 1 dati, le istruzioni solo dalla cache livello 1 istruzioni
+
+143)Il file System FAT32 
+v Utilizza una lista concatenata con cluster di dimensione fissa per l’allocazione dei file
+> Utiliza una bitmap per tenere traccia dei cluster liberi sul disco
+> Occupa poco spazio di memoria, e lo spazio occupato è indipendente dalla dimensione del disco e numero dei cluster
+> nessuna delle opzioni è corretta
+
+144)Il buffering dell’I/O 
+> non introduce alcuni overhead nei sistemi operativi che lo usano rispetto a quelli che fanno I/O diretto senza buffering
+> è utile per appianare le differenze tra diversi dispositivi di I/O rispetto alla loro velocità ed al tipo di trasferimento dati (blocch,stream)
+> richiede l’uso del buffer aggiuntivi nell’area di memoria dedicata ai dispositivi di I/O e nell’area di memoria dedicata ai processi utente, ma non nell’area del sistema operativo.
+> Nessuna delle opzioni è corretta
+
+145)Nei sistemi operativi con memoria virtuale paginata 
+> Il sistema usa sempre e comunque l’allocatore di memoria standard a pagine, senza consentire richieste speciali come ad esempio allocazioni contigue di memoria. Questo per assicurarsi di evitare i problemi di frammentazione interna od esterna
+v Il sistema operativo, in casi speciali, può usare allocatori di memoria specializzati che consentano ad esempio allocazioni di porzioni di memoria contigue per richieste particolari (come ad esempio per il DMA)
+> Il sistema può modificare dinamicamente la dimensione delle pagine in base alla quantità di memoria richiesta da un processo, in modo tale da minimizzare la frammentazione interna
+> nessuna delle opzioni è corretta
+
+146)I sistemi operativi che usano partizionamento dinamico della memoria
+v non soffrono mai di frammentazione interna
+> non soffrono mai di frammentazione esterna
+> soffrono in alcuni casi di frammentazione interna, quando diversi processi a  cui erano assegnata diverse aree di memoria vengono rimossi e sostituiti da altri processi e con dimensione diverse
+> necessitano dell’uso di tecniche di compattazione della memoria per risolvere il problema della frammentazione interna
+
+
+
+
+
+
+
+
